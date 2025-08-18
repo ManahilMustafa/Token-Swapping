@@ -7,11 +7,11 @@ const HeroSection = () => {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-white to-gray-50 py-20 lg:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
-          Unlock Real Estate Liquidity through{" "}
-          <span className="text-[#8694b5]">Token Swapping</span> between
-          Pakistan & Dubai
-        </h1>
+     <h1 className="max-w-4xl mx-auto text-center text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
+  Unlock Real Estate Liquidity through{" "}
+  <span className="text-[#8694b5]">Token Swapping</span>
+</h1>
+
         <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
           Discover how ZiCON Cloud&apos;s <strong>TokenizeX</strong> helps
           developers and investors transform stuck real estate into liquid,
