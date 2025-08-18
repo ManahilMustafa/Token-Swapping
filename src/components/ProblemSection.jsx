@@ -11,7 +11,7 @@ const ProblemSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-black mb-8 text-center">
-            Real Estate Is Stuck. <span className="text-green-600">Liquidity Is Locked.</span>
+            Real Estate Is Stuck. <span className="text-[#8694b5]">Liquidity Is Locked.</span>
           </h2>
           <p className="text-lg text-gray-600 mb-12 text-center max-w-2xl mx-auto">
             Billions of dollars worth of premium properties remain unsold or difficult to trade because of:
@@ -21,7 +21,7 @@ const ProblemSection = () => {
               <div key={index} className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
                <div className="flex items-start gap-6">
   <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-    <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+    <div className="w-3 h-3 bg-[#8694b5] rounded-full"></div>
   </div>
   <p className="text-gray-700 font-medium">{problem}</p>
 </div>

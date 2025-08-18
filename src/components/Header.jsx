@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Menu, X } from "lucide-react"
+import { Menu, X, MessageCircle } from "lucide-react"
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -17,14 +17,16 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <img src="/logo.jpg" alt="TokenizeX Logo" className="h-14 w-14" />
-            <span className="text-2xl font-bold text-black">Token Swapping</span>
+          <div className="flex items-center space-x-2">
+            <img 
+              src="/logo.webp" 
+              alt="TokenizeX Logo" 
+              className="h-30 w-30 object-contain" 
+            />
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-10">
-            {/* ↑ gap-10 for wider space */}
             <button onClick={() => scrollToSection("problem")} className="text-gray-600 hover:text-black transition-colors">
               Problem
             </button>
@@ -44,11 +46,13 @@ const Header = () => {
 
           {/* CTA Button and Mobile Menu */}
           <div className="flex items-center space-x-4">
+            {/* ✅ Desktop WhatsApp Button */}
             <button
-              className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md text-sm font-medium hidden sm:inline-flex transition-colors"
-              onClick={() => scrollToSection("contact")}
+              className="  text-black px-4 py-2 rounded-md text-sm font-medium hidden sm:inline-flex items-center gap-2 transition-colors border border-black"
+              onClick={() => window.open("https://wa.me/923229113010", "_blank")}
             >
-              Talk to Our Team
+              <MessageCircle className="h-5 w-5" />
+              <span>Talk to Our Team</span>
             </button>
 
             {/* Mobile Menu Button */}
@@ -62,7 +66,6 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden border-t border-gray-200 py-4">
             <nav className="flex flex-col gap-5">
-              {/* ↑ gap-5 for nice vertical spacing */}
               <button onClick={() => scrollToSection("problem")} className="text-left text-gray-600 hover:text-black transition-colors">
                 Problem
               </button>
@@ -78,12 +81,16 @@ const Header = () => {
               <button onClick={() => scrollToSection("platform")} className="text-left text-gray-600 hover:text-black transition-colors">
                 Platform
               </button>
-              <button
-                className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md text-sm font-medium w-fit transition-colors"
-                onClick={() => scrollToSection("contact")}
-              >
-                Talk to Our Team
-              </button>
+
+              {/* ✅ Mobile WhatsApp Button */}
+             <button
+  className=" text-black px-4 py-2 rounded-md text-sm font-medium w-fit flex items-center gap-2 transition-colors border border-black"
+  onClick={() => window.open("https://wa.me/923229113010", "_blank")}
+>
+  <MessageCircle className="h-5 w-5" />
+  <span>Talk to Our Team</span>
+</button>
+
             </nav>
           </div>
         )}

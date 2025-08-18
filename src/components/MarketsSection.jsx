@@ -12,22 +12,22 @@ const MarketsSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-black mb-12 text-center">
-            Why <span className="text-green-600">Pakistan & Dubai</span>?
+            Why <span className="text-[#8694b5]">Pakistan & Dubai</span>?
           </h2>
           <div className="space-y-6 mb-8">
             {points.map((point, index) => (
               <div key={index} className="flex items-start space-x-4">
-                <CheckCircle className="h-6 w-6 text-green-600 flex-shrink-0 mt-1" />
+                <CheckCircle className="h-6 w-6 text-[#8694b5] flex-shrink-0 mt-1" />
                 <p className="text-gray-700 text-lg">{point}</p>
               </div>
             ))}
           </div>
-          <div className="bg-green-50 border border-green-200 rounded-lg p-8">
+          <div className="bg-[#eeeeee] border border-blue-200 rounded-lg p-8">
             <div className="flex items-start space-x-4">
               <div className="text-2xl"></div>
               <p className="text-lg font-semibold text-black">
                 Together, Pakistan & Dubai can become the first{" "}
-                <span className="text-green-600">cross-border token swapping hub for real estate</span>.
+                <span className="text-[#8694b5]">cross-border token swapping hub for real estate</span>.
               </p>
             </div>
           </div>
