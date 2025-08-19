@@ -20,7 +20,7 @@ const Footer = () => {
     <Mail size={20} /> Email
   </a>
   <a
-    href="tel:+1234567890"
+    href="tel:+923229113010"
     className="flex items-center gap-2 text-gray-600 hover:text-black transition-colors"
   >
     <Phone size={20} /> Phone
